@@ -16,7 +16,7 @@
     <classes>
       <class name="test.AddContactTest">
         <methods>
-          <include name="validUserShouldBeAbleToAddCustomer" invocation-numbers="0"/>
+          <include name="validUserShouldBeAbleToAddCustomer"/>
         </methods>
       </class> <!-- test.AddContactTest -->
     </classes>

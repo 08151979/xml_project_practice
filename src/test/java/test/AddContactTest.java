@@ -28,7 +28,7 @@ public class AddContactTest extends BasePage {
 	String zip;
 	@Test
 	@Parameters({"userName", "password","FullName","CompanyName","Email","Phone","Address","City","Country","State","Zip"})
-	public void validUserShouldBeAbleToAddCustomer(@Optional("default parameter will execute if the parameter tag misses in the testng.xml ")String userName, String password, String fullName, String companyName, String email, String phone, String address, String city, String country, String state, String zip) throws InterruptedException {
+	public void validUserShouldBeAbleToAddCustomer(@Optional("default parameter will execute if the parameter tag misses in the testng.xml ")String userName, String password, String fullName, String companyName, String email, String phone, String address, String city, String country, String state, String zip, String empty) throws InterruptedException {
 		driver = BrowserFactory.init();
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 			loginPage.insertUserName(userName);

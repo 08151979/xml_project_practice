@@ -26,7 +26,7 @@ public class AddContactPage extends BasePage  {
      @FindBy(how = How.XPATH, using = "//*[@id=\"state\"]")WebElement STATE_ELEMENT;
      @FindBy(how = How.XPATH,using = "//*[@id=\"zip\"]") WebElement ZIP_ELEMENT;
      @FindBy(how = How.XPATH, using = "//select[@id='country']/option[1]")WebElement COUNTRY_ELEMENT;
-    
+    @ FindBy(how = How.XPATH, using = "//*[@id=\"rform\"]/div[1]/div[1]/div[10]/div/span/span[1]/span")WebElement EMPTY_ELEMENT;
      @FindBy(how = How.XPATH, using = "//*[@id=\"submit\"]")WebElement SAVE_ELEMENT;
      
      
@@ -71,6 +71,7 @@ public class AddContactPage extends BasePage  {
 	public void selectDropdownCountry(String country) {
 		selectDropDownPage(country);
 	}
+	
 	
 	public void clickableSaveButton() {
 		SAVE_ELEMENT.click();
